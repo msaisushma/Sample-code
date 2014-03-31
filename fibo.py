@@ -1,9 +1,8 @@
 def fib():
-	a,b,c,n=-1,1,0,int(raw_input("Enter position="))
+	a,b,n=-1,1,int(raw_input("Enter position="))
 	for i in range(n):
-		c=a+b
-		b,a=c,b
-	print c
+		b,a=a+b,b
+	print b
 
 if __name__=='__main__':
 	fib()
